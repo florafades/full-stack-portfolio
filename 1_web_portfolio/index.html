@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maia Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="/">Maia Ross</a>
+        <nav>
+            <a target="_blank" href="https://github.com/florafades"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/maia-ross-458b6822a/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>
+                    Hello! I'm Maia...
+                </h1>
+                <p>Fullstack Developer</p>
+            </div>
+            <h5 class="intro-description">
+                A FullStack Developer with a love for the 90s internet golden age.
+                Based in Annapolis, Maryland, I love to draw, play piano, and create a wide variety of fun and useful web applications.
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a target="_blank" href="mailto:masarwer@outlook.com"> Email me</a>
+                <a target="_blank" href="https://github.com/florafades">Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/maia-ross-458b6822a/">Linkedin</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">
+                    Play game??
+                </button>
+            </div>
+            <!-- class is global attrib. can be applied to any element -->
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Nice!</p>
+                <!-- <input type="color"> invokes the color picker -->
+                <!-- <input id="color-picker"> is set to "get" this element later in js using .getElementById() -->
+                <!-- the Id attribute is specifically designed to make an element easy to "grab" -->
+                <input type="color" 
+                    id="color-picker" 
+                    onchange="changeColor()" 
+                    value="#0084ff" />
+                <button onclick="resetColor()" style="display: none;">Reset</button>
+            </div>
+        </section>
+        <section>
+            <h2>
+                Skills
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | KonvaJS</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>
+                            Django | Flask | SQLAlchemy | Pandas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>
+                            Bootsrap | FantaCSS | HTML5 | GIT | CSS3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>
+                            Adobe Photoshop | CapCut | Canva
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IT Systems</td>
+                        <td>
+                            Active Directory | DHCP | Procurement | Windows Server
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+
+
+                <div class="project-card">
+                    <div>
+                        <p>Date Project Completed</p>
+                        <h4>Title of Project</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                        </div>
+                        <p>Description of the project and its value-add</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="public\fantacss.png" alt="maiacodes-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>Date Project Completed</p>
+                        <h4>Title of Project</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                        </div>
+                        <p>Description of the project and its value-add</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="public\fantacss.png" alt="maiacodes-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>Date Project Completed</p>
+                        <h4>Title of Project</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>technology1</p>
+                            </div>
+                        </div>
+                        <p>Description of the project and its value-add</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="public\fantacss.png" alt="maiacodes-thumbnail" />
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a target="_blank" href="https://www.maiacodes.com">Maia Ross</a> ☆ the repo on <a target="_blank" href="">GitHub</a>  </p>
+    </footer>
+    <script>
+        // color switching game interactivity
+
+        //1. select all html elements to later manipulate
+        const body = document.querySelector('body')
+        //document var automatically set to the html page currently open
+        const colorInput = document.getElementById('color-picker')
+        //document objects and its methods are generated by the Wep API of the browser
+        //eg chromium uses Blink API, Firfox uses Gecko DOM
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        //2. create functions
+        function playGame() {
+            //enables game play , shows selector color
+            colorDiv.style.display = "block"
+            playBtn.style.display = "none"
+        };
+
+        function changeColor() {
+            //get hex input, set to background
+            const selectedColor = colorInput.value 
+            body.style.background = selectedColor
+            resetBtn.style.display = "block"
+            hiddenText.style.display = "block"
+            colorInput.style.display = "none"
+        };
+
+        function resetColor() {
+            // change later to tiled bg****
+            body.style.background = 'white'
+            colorDiv.style.display = "block"
+            playBtn.style.display = 'block'
+
+            colorInput.style.display = "inline-block";
+
+            hiddenText.style.display = "none"
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        };
+
+        //3. assign the functions to the buttons; 
+        //adding function call to the elements themselves above
+    </script>
+</body>
+
+</html>
