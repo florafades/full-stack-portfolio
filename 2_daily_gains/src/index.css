@@ -84,6 +84,7 @@ h3, .training-plan-grid {
     z-index: 1;
     /* when cursor hovers over the cancel symbol shows */
     cursor: not-allowed;
+    opacity: 0.7;
 }
 
 .locked-card {

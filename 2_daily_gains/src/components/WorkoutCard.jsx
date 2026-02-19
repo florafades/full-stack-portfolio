@@ -75,7 +75,7 @@ export default function WorkoutCard(props) {
                                 }}
                                 className="weight-input" 
                                 placeholder="N/A"
-                                
+                                disabled
                             />
                         </React.Fragment>
                     )
@@ -130,7 +130,11 @@ export default function WorkoutCard(props) {
                 <button onClick={() => {
                     handleComplete(workoutIndex, {weights})
                 }}
-                disabled={true}>Complete</button>
+                // Complete button is disabled until all the weight fields are filled out
+                //ie until there is a weight associated with every exercise key
+                //we do this by comparing the length of the weights object to 
+                //how many workout keys are found in workout
+                disabled={Object.keys(weights).length !== workout.length}>Complete</button>
             </div>
         </div>
     )
