@@ -1,4 +1,4 @@
-import Grid from "./components/grid"
+import Grid from "./components/Grid"
 import Layout from "./components/Layout"
 import Hero from "./components/Hero"
 
